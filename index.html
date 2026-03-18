@@ -10,154 +10,183 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
     <style>
-        body { font-family: 'Poppins', sans-serif; background-color: #fffdf9; }
+        body { font-family: 'Poppins', sans-serif; }
         h1, h2, h3 { font-family: 'Fredoka', sans-serif; }
-        .bg-sun-gradient { background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); }
-        .card-pill { border-radius: 2rem; }
-        /* Animación suave para las tarjetas */
-        .hover-up { transition: transform 0.3s ease, shadow 0.3s ease; }
-        .hover-up:hover { transform: translateY(-8px); }
+        .bg-sun { background: #f59e0b; }
+        .text-sun { color: #d97706; }
+        .card-hover:hover { transform: translateY(-10px); transition: all 0.3s ease; }
     </style>
 </head>
 
-<body class="text-gray-800">
+<body class="bg-[#fffcf5] text-gray-800">
 
-    <header class="relative h-[80vh] flex items-center justify-center text-center text-white overflow-hidden">
+    <header class="relative h-[85vh] flex items-center justify-center text-center text-white overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&q=80" 
-                 alt="Ambiente de fiesta cálido" 
-                 class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-black/40"></div>
+            <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&q=80" 
+                 alt="Decoración de fiesta infantil cálida en Vuelta al Sol" 
+                 class="w-full h-full object-cover scale-105">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-[#d97706]/40"></div>
         </div>
 
         <div class="relative z-10 max-w-4xl px-6">
-            <h1 class="text-6xl md:text-8xl font-bold mb-4 drop-shadow-xl text-amber-50">Vuelta al Sol</h1>
-            <p class="text-xl md:text-2xl mb-8 font-light italic">¡La casita de fiestas más linda de La Plata!</p>
-            <a href="https://wa.me/5492210000000" class="bg-amber-500 hover:bg-amber-600 text-white px-12 py-4 rounded-full text-lg font-bold shadow-2xl transition-all inline-block">
-                Reservar mi fecha
+            <h1 class="text-6xl md:text-8xl font-bold mb-4 drop-shadow-lg">Vuelta al Sol</h1>
+            <p class="text-xl md:text-2xl mb-8 font-light drop-shadow-md italic text-amber-200">La casita donde los festejos brillan más.</p>
+            <a href="https://wa.me/5492210000000" class="bg-amber-500 hover:bg-amber-600 text-white px-10 py-4 rounded-full text-lg font-semibold transition-all shadow-xl inline-block">
+                Consultar Disponibilidad
             </a>
         </div>
     </header>
 
-    <section class="py-20 px-6 max-w-7xl mx-auto">
+    <section class="py-24 px-6 max-w-7xl mx-auto">
         <div class="text-center mb-16">
-            <h2 class="text-4xl font-bold text-amber-900 mb-2 italic">Nuestros Combos</h2>
-            <div class="w-24 h-1 bg-amber-400 mx-auto rounded-full"></div>
+            <h2 class="text-4xl font-bold text-amber-900 mb-4 italic">Elegí tu aventura</h2>
+            <p class="text-gray-600">Tenemos un plan ideal para cada tipo de festejo.</p>
         </div>
         
         <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white p-8 card-pill shadow-lg border border-amber-50 hover-up">
-                <div class="text-4xl mb-4">☀️</div>
-                <h3 class="text-2xl font-bold text-amber-600 mb-2">Combo Solcito</h3>
-                <p class="text-gray-500 text-sm mb-6 italic">Ideal para cumples tranquilos</p>
-                <ul class="text-gray-600 space-y-3 mb-8">
-                    <li>✓ 2:30 hs de juego libre</li>
-                    <li>✓ 2 Coordinadores</li>
-                    <li>✓ Invitación Digital</li>
-                    <li>✓ Café para los grandes</li>
+            <div class="bg-white p-8 rounded-[3rem] shadow-lg border border-amber-100 card-hover text-center">
+                <span class="text-4xl block mb-4">☀️</span>
+                <h3 class="text-2xl font-bold text-amber-600 mb-4 italic">Solcito</h3>
+                <p class="text-sm text-gray-500 mb-6 font-semibold uppercase">Básico Semanal</p>
+                <ul class="text-gray-600 space-y-3 mb-8 text-left">
+                    <li>✓ Alquiler de la casita (2:30hs)</li>
+                    <li>✓ 2 Coordinadores lúdicos</li>
+                    <li>✓ Tarjeta de invitación digital</li>
+                    <li>✓ Rincón de café para adultos</li>
                 </ul>
-                <button class="w-full py-3 rounded-full border-2 border-amber-500 text-amber-600 font-bold hover:bg-amber-500 hover:text-white transition">Consultar</button>
+                <a href="https://wa.me/5492210000000" class="text-amber-500 font-bold border-2 border-amber-500 px-6 py-2 rounded-full hover:bg-amber-500 hover:text-white transition">Consultar</a>
             </div>
 
-            <div class="bg-sun-gradient p-8 card-pill shadow-2xl text-white transform md:scale-110 hover-up">
-                <div class="text-4xl mb-4">🌈</div>
-                <h3 class="text-2xl font-bold mb-2">Combo Arcoíris</h3>
-                <p class="text-amber-100 text-sm mb-6 italic font-semibold italic">¡El favorito de todos!</p>
-                <ul class="space-y-3 mb-8">
-                    <li>✓ Todo lo del Combo Solcito</li>
-                    <li>✓ Menú infantil completo</li>
-                    <li>✓ Piñata y bolsitas</li>
-                    <li>✓ Snack saludable</li>
+            <div class="bg-amber-500 p-8 rounded-[3rem] shadow-2xl text-white card-hover text-center relative overflow-hidden">
+                <div class="absolute top-0 right-0 bg-yellow-300 text-amber-800 text-xs font-bold px-4 py-1 rounded-bl-xl uppercase">El más elegido</div>
+                <span class="text-4xl block mb-4">🌈</span>
+                <h3 class="text-2xl font-bold mb-4 italic">Arcoíris</h3>
+                <p class="text-sm text-amber-100 mb-6 font-semibold uppercase">Festejo Completo</p>
+                <ul class="space-y-3 mb-8 text-left">
+                    <li>✓ Todo lo del Plan Solcito</li>
+                    <li>✓ Menú infantil completo y bebidas</li>
+                    <li>✓ Piñata artesanal</li>
+                    <li>✓ Bolsitas de souvenirs</li>
                 </ul>
-                <button class="w-full py-3 rounded-full bg-white text-amber-700 font-bold hover:bg-amber-50 transition shadow-lg">¡Lo quiero!</button>
+                <a href="https://wa.me/5492210000000" class="bg-white text-amber-600 font-bold px-6 py-2 rounded-full hover:bg-amber-50 transition">Quiero este</a>
             </div>
 
-            <div class="bg-white p-8 card-pill shadow-lg border border-amber-50 hover-up">
-                <div class="text-4xl mb-4">⭐</div>
-                <h3 class="text-2xl font-bold text-amber-600 mb-2">Combo Estrella</h3>
-                <p class="text-gray-500 text-sm mb-6 italic">Festejo a todo nivel</p>
-                <ul class="text-gray-600 space-y-3 mb-8">
-                    <li>✓ Todo lo del Combo Arcoíris</li>
-                    <li>✓ Candy Bar Temático</li>
-                    <li>✓ Maquillaje Artístico</li>
-                    <li>✓ Personaje sorpresa</li>
+            <div class="bg-white p-8 rounded-[3rem] shadow-lg border border-amber-100 card-hover text-center">
+                <span class="text-4xl block mb-4">⭐</span>
+                <h3 class="text-2xl font-bold text-amber-600 mb-4 italic">Estrella</h3>
+                <p class="text-sm text-gray-500 mb-6 font-semibold uppercase">Experiencia Premium</p>
+                <ul class="text-gray-600 space-y-3 mb-8 text-left">
+                    <li>✓ Todo lo del Plan Arcoíris</li>
+                    <li>✓ Temática personalizada (deco y Candy Bar)</li>
+                    <li>✓ Taller de arte o maquillaje artístico</li>
+                    <li>✓ Animación especial con personaje</li>
                 </ul>
-                <button class="w-full py-3 rounded-full border-2 border-amber-500 text-amber-600 font-bold hover:bg-amber-500 hover:text-white transition">Consultar</button>
+                <a href="https://wa.me/5492210000000" class="text-amber-500 font-bold border-2 border-amber-500 px-6 py-2 rounded-full hover:bg-amber-500 hover:text-white transition">Consultar</a>
             </div>
         </div>
     </section>
 
-    <section class="py-20 bg-amber-50 rounded-[3rem] mx-4">
-        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-            <div class="order-2 md:order-1">
-                <h2 class="text-4xl font-bold text-amber-900 mb-6 italic">Donde el juego es <span class="text-amber-500">el corazón</span></h2>
-                <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-                    En **Vuelta al Sol**, nos alejamos de las pantallas para volver a lo esencial. Nuestra casita está llena de rincones mágicos:
-                </p>
-                <div class="space-y-4">
-                    <div class="flex items-center gap-4">
-                        <span class="bg-white p-2 rounded-full shadow-sm text-2xl">🧱</span>
-                        <p class="font-medium">Juegos de madera y encastre para crear sin límites.</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <span class="bg-white p-2 rounded-full shadow-sm text-2xl">🧸</span>
-                        <p class="font-medium">Plaza blanda segura para los más pequeñitos.</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <span class="bg-white p-2 rounded-full shadow-sm text-2xl">🎭</span>
-                        <p class="font-medium">Rincón de disfraces para ser superhéroes por un día.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="order-1 md:order-2">
+    <section class="py-24 bg-white rounded-[4rem] mx-4 shadow-inner">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            <div class="relative">
                 <img src="https://images.unsplash.com/photo-1566454825481-4e48f80aa4d7?auto=format&fit=crop&q=80" 
-                     alt="Zona de juegos infantiles con bloques de madera" 
-                     class="rounded-[3rem] shadow-2xl w-full h-[450px] object-cover border-8 border-white">
+                     class="rounded-[3rem] shadow-2xl relative z-10 w-full h-[400px] object-cover" 
+                     alt="Niños jugando en la plaza blanda de la casita de fiestas">
+                <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-yellow-400 rounded-full z-0 opacity-50 filter blur-xl"></div>
             </div>
-        </div>
-    </section>
-
-    <section class="py-24 max-w-7xl mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center text-amber-900 mb-12 italic">Lo que dicen las familias</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white p-8 rounded-3xl shadow-sm border-t-4 border-amber-400 italic">
-                "Excelente atención, la casita es hermosa y super cálida. Mi hijo no quería irse."
-                <p class="mt-4 font-bold not-italic text-amber-600 text-sm">— Mamá de Sofi</p>
-            </div>
-            <div class="bg-white p-8 rounded-3xl shadow-sm border-t-4 border-orange-400 italic">
-                "Nos encantó el rincón de café para los grandes. Todo muy organizado."
-                <p class="mt-4 font-bold not-italic text-amber-600 text-sm">— Papá de Benja</p>
-            </div>
-            <div class="bg-white p-8 rounded-3xl shadow-sm border-t-4 border-yellow-400 italic">
-                "La animación es de otro planeta, los chicos estuvieron entretenidos toda la tarde."
-                <p class="mt-4 font-bold not-italic text-amber-600 text-sm">— Mamá de Lolo</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-20 bg-zinc-900 text-white rounded-[3rem] mx-4 mb-8">
-        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
             <div>
-                <h2 class="text-4xl font-bold mb-6 italic text-amber-400">Vení a conocernos</h2>
-                <p class="text-xl mb-4">Calle 13 e/ 44 y 45, La Plata</p>
-                <p class="text-gray-400 italic">Abierto para visitas con cita previa.</p>
-                <div class="mt-8">
-                    <p class="mb-2">📞 +54 9 221 000-0000</p>
-                    <p>📸 @vueltaalsolcasitadefiesta</p>
+                <h2 class="text-4xl font-bold text-amber-900 mb-6 italic">Un lugar donde el <span class="text-amber-500">juego es sagrado</span></h2>
+                <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+                    Nuestra casita está diseñada para que los chicos exploren, creen y se diviertan en un ambiente seguro y cálido. Privilegiamos materiales nobles y juegos que estimulan la imaginación, lejos de las pantallas.
+                </p>
+                <div class="grid grid-cols-2 gap-4 text-amber-800 font-semibold">
+                    <div class="bg-amber-50 p-4 rounded-2xl flex items-center gap-2"><span>✨</span> Plaza Blanda</div>
+                    <div class="bg-amber-50 p-4 rounded-2xl flex items-center gap-2"><span>🧸</span> Juegos de madera</div>
+                    <div class="bg-amber-50 p-4 rounded-2xl flex items-center gap-2"><span>🏰</span> Laberinto lúdico</div>
+                    <div class="bg-amber-50 p-4 rounded-2xl flex items-center gap-2"><span>🎭</span> Rincón de disfraces</div>
                 </div>
             </div>
-            <div class="h-[300px] rounded-3xl overflow-hidden shadow-2xl grayscale hover:grayscale-0 transition-all duration-700">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13085.57863773121!2d-57.9620704!3d-34.9213888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e62b1f00e49a%3A0x3974f17c46f33544!2sLa%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1700000000000!5m2!1ses!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 max-w-6xl mx-auto text-center">
+        <h2 class="text-4xl font-bold text-amber-900 mb-16 italic">¿Cómo reservo mi fecha?</h2>
+        <div class="grid md:grid-cols-3 gap-12 relative">
+            <div class="absolute top-1/2 left-0 right-0 h-1 bg-amber-200 -translate-y-1/2 z-0 hidden md:block"></div>
+            
+            <div class="relative z-10 bg-[#fffcf5] p-6 rounded-3xl">
+                <div class="bg-amber-500 w-20 h-20 rounded-full flex items-center justify-center text-white text-3xl font-bold mx-auto mb-8 shadow-xl">1</div>
+                <h3 class="font-bold text-xl mb-3 text-gray-800">WhatsApp</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">Consultás disponibilidad para la fecha de tu cumple y te sacás las primeras dudas.</p>
+            </div>
+            <div class="relative z-10 bg-[#fffcf5] p-6 rounded-3xl">
+                <div class="bg-amber-500 w-20 h-20 rounded-full flex items-center justify-center text-white text-3xl font-bold mx-auto mb-8 shadow-xl">2</div>
+                <h3 class="font-bold text-xl mb-3 text-gray-800">Visita</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">Vení a conocer la casita, respirar su aire cálido y charlamos todos los detalles.</p>
+            </div>
+            <div class="relative z-10 bg-[#fffcf5] p-6 rounded-3xl">
+                <div class="bg-amber-500 w-20 h-20 rounded-full flex items-center justify-center text-white text-3xl font-bold mx-auto mb-8 shadow-xl">3</div>
+                <h3 class="font-bold text-xl mb-3 text-gray-800">Reserva</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">Congelás el precio con una seña (efectivo o transferencia) y ¡listo para festejar!</p>
             </div>
         </div>
     </section>
 
-    <footer class="py-10 text-center text-gray-500 text-sm">
-        <p>© 2026 Vuelta al Sol - La Casita de Fiestas en La Plata</p>
+    <section class="py-24 bg-amber-50 rounded-[4rem] mx-4">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-amber-900 mb-16 italic">Lo que dicen las familias</h2>
+            <div class="grid md:grid-cols-3 gap-8 hover:[&>div]:scale-105 [&>div]:transition-transform">
+                <div class="bg-white p-8 rounded-[2rem] shadow-sm border border-amber-100 flex flex-col justify-between card-hover">
+                    <p class="text-gray-600 italic mb-6 leading-relaxed">"El mejor cumple de Juana. Los coordinadores tienen una paciencia increíble y el salón estaba impecable. ¡Gracias por tanto amor!"</p>
+                    <p class="font-bold text-amber-600 border-t pt-4 border-amber-100">— Romina, mamá de Juana</p>
+                </div>
+                <div class="bg-white p-8 rounded-[2rem] shadow-sm border border-amber-100 flex flex-col justify-between card-hover">
+                    <p class="text-gray-600 italic mb-6 leading-relaxed">"Super recomendable. El espacio es muy cálido y los chicos no pararon de jugar un segundo. Volveremos seguro el año que viene."</p>
+                    <p class="font-bold text-amber-600 border-t pt-4 border-amber-100">— Carlos, papá de Benja</p>
+                </div>
+                <div class="bg-white p-8 rounded-[2rem] shadow-sm border border-amber-100 flex flex-col justify-between card-hover">
+                    <p class="text-gray-600 italic mb-6 leading-relaxed">"Me encantó que se ocupan de todo. Pude disfrutar del rincón de café con los otros papás mientras los nenes se divertían."</p>
+                    <p class="font-bold text-amber-600 border-t pt-4 border-amber-100">— Mariana, mamá de Lolo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-zinc-900 text-white rounded-[4rem] -mt-10 pt-32">
+        <div class="max-w-7xl mx-auto px-6 relative">
+            <div class="absolute -top-10 -left-10 w-40 h-40 bg-amber-500 rounded-full opacity-10 filter blur-3xl z-0"></div>
+            <div class="grid md:grid-cols-2 gap-12 items-center relative z-10">
+                <div>
+                    <h2 class="text-4xl font-bold mb-6 italic text-amber-300">Encontranos en la ciudad</h2>
+                    <p class="text-xl mb-8 text-amber-100 font-light">Calle 13 e/ 44 y 45, La Plata</p>
+                    <div class="space-y-4 text-gray-400 leading-relaxed border-l-2 border-amber-500/30 pl-6">
+                        <p>📍 Punto estratégico en el centro de La Plata.</p>
+                        <p>🕒 Visitas con cita previa: Lunes a Viernes de 17 a 19hs.</p>
+                        <p>📧 vueltaalsolcasita@gmail.com</p>
+                    </div>
+                </div>
+                <div class="h-[350px] rounded-[2rem] overflow-hidden shadow-2xl border-4 border-amber-500/20">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13091.9548777189!2d-57.9620436!3d-34.9192477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e633d42c37e1%3A0xc6226322968d0802!2sLa%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1710000000000!5m2!1ses!2sar" 
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-16 text-center bg-[#fffcf5]">
+        <h2 class="text-2xl font-bold text-amber-900 mb-6 italic">¡Te esperamos para tu próxima Vuelta al Sol!</h2>
+        <div class="flex justify-center gap-8 mb-8">
+            <a href="https://instagram.com/vueltaalsolcasitadefiesta/" class="text-amber-600 font-bold hover:underline transition">Instagram</a>
+            <a href="https://wa.me/5492210000000" class="text-amber-600 font-bold hover:underline transition">WhatsApp</a>
+        </div>
+        <p class="text-xs text-gray-400">© 2026 Vuelta al Sol - La Casita de Fiestas en La Plata.</p>
     </footer>
 
-    <a href="https://wa.me/5492210000000" class="fixed bottom-8 right-8 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform z-50">
-        <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <a href="https://wa.me/5492210000000" target="_blank"
+       class="fixed bottom-8 right-8 bg-green-500 text-white p-5 rounded-full shadow-2xl hover:scale-110 transition-transform z-50">
+        <svg width="30" height="30" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
     </a>
 
 </body>
